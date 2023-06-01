@@ -1,5 +1,6 @@
 package org.example;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -22,7 +23,7 @@ public class TestIntermediate {
         }
     )
     public void testGetNumberName(int number, String expected) {
-        String actual = Main.getNumberName(number);
+        String actual = Intermediate.getNumberName(number);
         Assertions.assertEquals(expected, actual);
     }
 }

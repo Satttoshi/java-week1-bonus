@@ -13,6 +13,10 @@ public class Main {
         System.out.println("Hey what's your name?: ");
         String input = scanner.nextLine();
         System.out.println("Hello " + input + "!");
+
+        Intermediate intermediate = new Intermediate();
+
+        String numberName = intermediate.getNumberName(5);
     }
     public static boolean isBiggerThan0(int number) {
         return number > 0;
