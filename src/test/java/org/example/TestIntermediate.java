@@ -6,6 +6,10 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 public class TestIntermediate {
 
+    // Test für Aufgabe: Schreibe eine Methode die zu
+    // einer einstelligen Zahl das entsprechende
+    // Zahlenwort ausgibt.
+
     @ParameterizedTest
     @CsvSource(
         value = {

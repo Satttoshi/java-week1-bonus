@@ -2,6 +2,8 @@ package org.example;
 
 public class Intermediate {
 
+    // Aufgabe: Schreibe eine Methode die zu einer
+    // einstelligen Zahl das entsprechende Zahlenwort ausgibt.
     public static String getNumberName(int number) {
 
         String[] Numbers = {
