@@ -14,9 +14,8 @@ public class Main {
         String input = scanner.nextLine();
         System.out.println("Hello " + input + "!");
 
-        Intermediate intermediate = new Intermediate();
-
-        String numberName = intermediate.getNumberName(5);
+        String numberName = Intermediate.getNumberName(5);
+        System.out.println(numberName);
     }
     public static boolean isBiggerThan0(int number) {
         return number > 0;
