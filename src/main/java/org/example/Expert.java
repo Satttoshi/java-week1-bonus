@@ -5,11 +5,8 @@ public class Expert {
     //Schreibe eine Methode die einen Eingabestring rückwärts ausgibt.
 
     public static String reverseString(String text) {
-        String reverse = "";
-        for (int i = 0; i < text.length(); i++) {
-            reverse = text.charAt(i) + reverse;
-        }
-        return reverse;
+        StringBuilder str = new StringBuilder(text);
+        return String.valueOf(str.reverse());
     }
 
 
