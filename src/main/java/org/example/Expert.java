@@ -28,15 +28,30 @@ public class Expert {
         return array;
     }
 
-
-
-
     //Schreibe eine Methode die einen String nach ,
     // separiert und als Array zurück gibt.
+
+    public static String[] CreateStringArray(String text) {
+        return text.split(",");
+    }
 
 
     //Schreibe eine Methode die Quersumme einer Ganzzahl berechnet.
 
+    public static int checkSum(long number) {
+        int sum = 0;
+        while (number > 0) {
+            sum += number % 10;
+            number /= 10;
+        }
+        return sum;
+    }
+
 
     //Gib eine Ganzzahl (1-100) als römische Zahl aus (12 = XII)
+
+    public static String romanNumeral(int number) {
+        return "IV";
+    }
+
 }

@@ -21,6 +21,8 @@ public class Main {
 
         String reverse = Expert.reverseString("Hello World");
         System.out.println(reverse);
+        String[] stringArray = Expert.CreateStringArray("Hello,World");
+        System.out.println(java.util.Arrays.toString(stringArray));
     }
     public static boolean isBiggerThan0(int number) {
         return number > 0;
