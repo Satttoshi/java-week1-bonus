@@ -16,9 +16,11 @@ public class Main {
 
         String numberName = Intermediate.getNumberName(5);
         System.out.println(numberName);
-
         Intermediate.printNumbers();
         Intermediate.inputWords();
+
+        String reverse = Expert.reverseString("Hello World");
+        System.out.println(reverse);
     }
     public static boolean isBiggerThan0(int number) {
         return number > 0;
