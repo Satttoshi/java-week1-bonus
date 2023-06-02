@@ -13,6 +13,23 @@ public class Expert {
     //Gibt den folgenden Array aufsteigend sortiert aus:
     // {6, 2, 8, 3, 9, 6}
 
+    public static int[] sortArray(int[] array) {
+        int temp;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 1; j < (array.length - i); j++) {
+
+                if (array[j - 1] > array[j]) {
+                    temp = array[j - 1];
+                    array[j - 1] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+        return array;
+    }
+
+
+
 
     //Schreibe eine Methode die einen String nach ,
     // separiert und als Array zurück gibt.
