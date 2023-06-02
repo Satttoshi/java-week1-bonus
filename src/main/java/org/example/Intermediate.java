@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Intermediate {
 
     // Aufgabe: Schreibe eine Methode die zu einer
@@ -39,4 +41,16 @@ public class Intermediate {
     // und diese in einem Array speichert. Gib vor jeder Eingabe jeweils die
     // eingegebenen Wörter noch mal aus.
 
+    public static void inputWords() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("How many words do you want to enter?: ");
+        int input = scanner.nextInt();
+        String[] words = new String[input];
+        for (int i = 0; i < input; i++) {
+            System.out.println("Your words are: " + java.util.Arrays.toString(words));
+            System.out.println("Enter a word: ");
+            words[i] = scanner.next();
+        }
+
+    }
 }

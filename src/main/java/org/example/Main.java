@@ -16,7 +16,9 @@ public class Main {
 
         String numberName = Intermediate.getNumberName(5);
         System.out.println(numberName);
+
         Intermediate.printNumbers();
+        Intermediate.inputWords();
     }
     public static boolean isBiggerThan0(int number) {
         return number > 0;

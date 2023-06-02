@@ -13,7 +13,7 @@ public class TestIntermediate {
     @ParameterizedTest
     @CsvSource(
         value = {
-            "0, One",
+            "0, One,",
             "1, Two",
             "2, Three",
             "3, Four",
@@ -30,4 +30,5 @@ public class TestIntermediate {
         String actual = Intermediate.getNumberName(number);
         Assertions.assertEquals(expected, actual);
     }
+
 }
