@@ -23,6 +23,12 @@ public class Main {
         System.out.println(reverse);
         String[] stringArray = Expert.CreateStringArray("Hello,World");
         System.out.println(java.util.Arrays.toString(stringArray));
+        int checkSum = Expert.checkSum(123);
+        System.out.println("Checksum of 123 is: " + checkSum);
+        String romanNumeral = Expert.romanNumeral(420);
+        System.out.println("420 in roman numerals is: " + romanNumeral);
+        String romanNumeral2 = Expert.romanNumeral(69);
+        System.out.println("69 in roman numerals is: " + romanNumeral2);
     }
     public static boolean isBiggerThan0(int number) {
         return number > 0;
