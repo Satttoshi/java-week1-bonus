@@ -51,7 +51,17 @@ public class Expert {
     //Gib eine Ganzzahl (1-100) als römische Zahl aus (12 = XII)
 
     public static String romanNumeral(int number) {
-        return "IV";
+        String[] romanNumeral = {"C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        int[] romanNumeralValue = {100, 90, 50, 40, 10, 9, 5, 4, 1};
+        StringBuilder roman = new StringBuilder();
+
+        for (int i = 0; i < romanNumeralValue.length; i++) {
+            while (number >= romanNumeralValue[i]) {
+                roman.append(romanNumeral[i]);
+                number -= romanNumeralValue[i];
+            }
+        }
+        return roman.toString();
     }
 
 }
