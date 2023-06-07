@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Intermediate {
 
+    // random change
     // Aufgabe: Schreibe eine Methode die zu einer
     // einstelligen Zahl das entsprechende Zahlenwort ausgibt.
     public static String getNumberName(int number) {
