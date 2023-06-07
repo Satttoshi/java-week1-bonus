@@ -8,8 +8,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-public class TestExpert {
-
+class TestExpert {
     // Aufgabe Test: Schreibe eine Methode die einen Eingabestring rückwärts ausgibt.
     @ParameterizedTest
     @CsvSource(
@@ -18,7 +17,7 @@ public class TestExpert {
             "what234XD!, !DX432tahw",
         }
     )
-    public void testGetNumberName(String text, String expected) {
+    void testGetNumberName(String text, String expected) {
         String actual = Expert.reverseString(text);
         Assertions.assertEquals(expected, actual);
     }
@@ -32,11 +31,10 @@ public class TestExpert {
     }
     @ParameterizedTest
     @MethodSource("testDataSortArray")
-    public void testSortArray(int[] array, int[] expected) {
+    void testSortArray(int[] array, int[] expected) {
         int[] actual = Expert.sortArray(array);
         Assertions.assertArrayEquals(expected, actual);
     }
-
 
     static Stream<Arguments> testDataCreateStringArray() {
         return Stream.of(
@@ -47,7 +45,7 @@ public class TestExpert {
     }
     @ParameterizedTest
     @MethodSource("testDataCreateStringArray")
-    public void testCreateStringArray(String text, String[] expected) {
+    void testCreateStringArray(String text, String[] expected) {
         String[] actual = Expert.CreateStringArray(text);
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -59,13 +57,13 @@ public class TestExpert {
             "123456789, 45",
             "1234567890, 45",
             "12345678901, 46",
+            "12345678909, 54",
         }
     )
-    public void testCheckSum(long number, int expected) {
+    void testCheckSum(long number, int expected) {
         int actual = Expert.checkSum(number);
         Assertions.assertEquals(expected, actual);
     }
-
 
     @ParameterizedTest
     @CsvSource(
@@ -145,9 +143,8 @@ public class TestExpert {
             "73, LXXIII",
         }
     )
-    public void testRomanNumber(int number, String expected) {
+    void testRomanNumber(int number, String expected) {
         String actual = Expert.romanNumeral(number);
         Assertions.assertEquals(expected, actual);
     }
-
 }
